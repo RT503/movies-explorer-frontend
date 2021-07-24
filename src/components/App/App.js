@@ -2,12 +2,12 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Main from '../Main/Main';
-import Login from '../Login/Login';
-import Register from '../Register/Register';
-import Movies from '../Movies/Movies';
-import Profile from '../Profile/Profile';
-import SavedMovies from '../SavedMovies/SavedMovies';
-import NotFound from '../NotFound/NotFound';
+// import Login from '../Login/Login';
+// import Register from '../Register/Register';
+// import Movies from '../Movies/Movies';
+// import Profile from '../Profile/Profile';
+// import SavedMovies from '../SavedMovies/SavedMovies';
+// import NotFound from '../NotFound/NotFound';
 
 import './App.css';
 
@@ -18,22 +18,22 @@ function App() {
         <Route exact path="/">
           <Main/>
         </Route>
-        <Route>
+{/*        <Route path="/signin">
           <Login/>
         </Route>
-        <Route>
+        <Route path="/sugnup">
           <Register/>
         </Route>
-        <Route>
+        <Route path="/profile">
           <Profile/>
         </Route>
-        <Route>
+        <Route path="/movies">
           <Movies/>
         </Route>
-        <Route>
+        <Route path="/saved-movies">
           <SavedMovies/>
         </Route>
-        <Route path="*" component={NotFound} />
+        <Route path="*" component={NotFound} /> */}
       </Switch>
     </div>
   );
