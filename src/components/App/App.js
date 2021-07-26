@@ -7,7 +7,7 @@ import Main from '../Main/Main';
 // import Movies from '../Movies/Movies';
 // import Profile from '../Profile/Profile';
 // import SavedMovies from '../SavedMovies/SavedMovies';
-// import NotFound from '../NotFound/NotFound';
+import NotFound from '../NotFound/NotFound';
 
 import './App.css';
 
@@ -32,8 +32,8 @@ function App() {
         </Route>
         <Route path="/saved-movies">
           <SavedMovies/>
-        </Route>
-        <Route path="*" component={NotFound} /> */}
+        </Route> */}
+        <Route path="*" component={NotFound} />
       </Switch>
     </div>
   );

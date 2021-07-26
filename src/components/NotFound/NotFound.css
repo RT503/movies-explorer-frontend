@@ -1,0 +1,31 @@
+.not-found {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.not-found__title {
+  font-weight: 400;
+  font-size: 140px;
+  line-height: 169px;
+  margin: 0;
+}
+
+.not-found__subtitle {
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  padding: 5px 0 0 ;
+}
+
+.not-found__go-back-button {
+  border: none;
+  position: relative;
+  top: 167px;
+  color: #3456F3;
+  font-size: 14px;
+  line-height: 17px;
+  background: transparent;
+  cursor: pointer;
+}
