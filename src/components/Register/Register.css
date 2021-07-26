@@ -15,7 +15,8 @@
 .auth__form {
   display: flex;
   flex-direction: column;
-
+  min-height: 413px;
+  justify-content: space-between;
 }
 
 .auth__fieldset {
@@ -72,11 +73,13 @@
   line-height: 17px;
   font-weight: 500;
   min-height: 45px;
-  margin-top: 59px;
+  /*margin-top: 59px;*/
 }
 
 .auth__signin-link-caption {
   color: #A0A0A0;
+  line-height: 17px;
+  padding-left: 6px;
 }
 
 .auth__signin-link {
