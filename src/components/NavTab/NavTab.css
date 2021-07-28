@@ -1,0 +1,21 @@
+.nav-tab {
+  font-size: 14px;
+  line-height: 18px;
+  }
+
+.nav-tab__link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-tab__link:first-of-type {
+  padding-right: 20px;
+  font-weight: 500;
+}
+
+.nav-tab__link:nth-of-type(2) {
+  padding-right: 50px;
+}
+
+.nav-tab__link:active {
+}

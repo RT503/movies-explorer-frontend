@@ -1,0 +1,9 @@
+.header {
+  width: calc(100% - 2 * 70px);
+}
+
+.header__container {
+  padding: 18px 70px 18px 70px;
+  display: flex;
+  justify-content: space-between;
+}

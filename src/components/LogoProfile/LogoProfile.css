@@ -1,0 +1,6 @@
+.logo_profile{
+  background: url('../../images/logo_profile.svg') no-repeat center / contain;
+  width: 38px;
+  height: 38px;
+  display: inline-block;
+}
