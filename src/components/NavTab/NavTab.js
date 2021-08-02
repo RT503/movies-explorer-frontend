@@ -4,11 +4,11 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 function NavTab() {
   return (
-  <nav className="nav-tab">
-    <Link to="#about-project" className="nav-tab__link">О проекте</Link>
-    <Link to="#techs" className="nav-tab__link">Технологии</Link>
-    <Link to="#about-me" className="nav-tab__link">Аккаунт</Link>
-  </nav>
+    <nav className="nav-tab">
+      <Link to="#about-project" className="nav-tab__link">О проекте</Link>
+      <Link to="#techs" className="nav-tab__link">Технологии</Link>
+      <Link to="#about-me" className="nav-tab__link">Студент</Link>
+    </nav>
   );
 }
 

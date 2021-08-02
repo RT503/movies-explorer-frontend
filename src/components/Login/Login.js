@@ -1,34 +1,35 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '../Logo/Logo';
+import Header from '../Header/Header';
+import AuthSection from '../AuthSection/AuthSection';
+
 import './Login.css';
 
 function Login() {
   return (
-    <section className="auth">
-      <Logo/>
-      <h1 className="auth__title">Рады видеть!</h1>
-      <form className="auth__form">
-        <fieldset className="auth__fieldset">
-          <label className="auth__form-label" htmlFor="email">
-            E-mail
-            <input name="email" className="auth__form-input" type="email" required placeholder="E-mail"/>
-          </label>
-          <span className="auth__form-error"></span>
-          <label className="auth__form-label" htmlFor="password">
-            Пароль
-            <input name="password" className="auth__form-input" type="password" required placeholder="Пароль"/>
-          </label>
-          <span className="auth__form-error"></span>
+    <>
+      <Header mod="header-auth" />
+      <AuthSection
+        buttonText="Войти"
+        caption="Ещё не зарегистрированы? "
+        linkPath="/signup"
+        linkText="Регистрация"
+        sectionTitle="Рады видеть!">
+        <fieldset className="form__fieldset">
+          <div className="form__input-container">
+            <label className="form__label" htmlFor="email">
+              E-mail
+              <input name="email" type="email" className="form__input" required placeholder="E-mail"/>
+            </label>
+            <span className="form__error"></span>
+            <label className="form__label" htmlFor="email">
+              Пароль
+              <input name="password" type="password" className="form__input" required placeholder="Пароль"/>
+            </label>
+            <span className="form__error"></span>
+          </div>
         </fieldset>
-        <div className="auth__form-buttons-container">
-          <button className="auth__submit-button">Войти</button>
-          <p className="auth__signin-link-caption">Ещё не зарегистрированы?
-            <Link className="auth__signin-link" to="/signup">Регистрация</Link>
-          </p>
-        </div>
-      </form>
-    </section>
+      </AuthSection>
+    </>
   );
 }
 

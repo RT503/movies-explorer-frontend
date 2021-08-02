@@ -1,13 +1,32 @@
 import React from 'react';
-import Logo from '../Logo/Logo';
+
+import Header from '../Header/Header';
+import AuthNav from '../AuthNav/AuthNav';
+import Navigation from '../Navigation/Navigation';
+import Promo from '../Promo/Promo';
+import AboutProject from '../AboutProject/AboutProject';
+import Techs from '../Techs/Techs';
+import AboutMe from '../AboutMe/AboutMe';
+import Portfolio from '../Portfolio/Portfolio';
+import Footer from '../Footer/Footer';
+
 import './Main.css';
 
-function Main() {
+function Main({ isLoggedIn }) {
   return (
     <main className="main">
-      <header className="header">
-        <Logo/>
-      </header>
+      <Header>
+        {
+          !isLoggedIn ? <AuthNav /> : <Navigation/>
+        }
+      </Header>
+      <Promo />
+      <AboutProject />
+      <Techs />
+      <AboutMe>
+        <Portfolio />
+      </AboutMe>
+      <Footer></Footer>
     </main>
   );
 }

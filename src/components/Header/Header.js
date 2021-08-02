@@ -1,14 +1,13 @@
 import React from 'react';
 import LogoProfile from '../LogoProfile/LogoProfile';
 import './Header.css';
-import NavTab from '../NavTab/NavTab';
 
-function Header() {
+function Header({ children, mod = '' }) {
   return (
     <header className="header">
-      <div className="header__container">
+      <div className ={`header__container ${mod}`}>
         { <LogoProfile /> }
-        <NavTab/>
+        {children}
       </div>
     </header>
   );

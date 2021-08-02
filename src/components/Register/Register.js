@@ -1,41 +1,41 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import Logo from '../Logo/Logo';
+import Header from '../Header/Header';
+import AuthSection from '../AuthSection/AuthSection';
+
 import './Register.css';
 
 function Register() {
   return (
-    <>
-      <section className="auth">
-        <Logo/>
-        <h1 className="auth__title">Добро пожаловать!</h1>
-        <form className="auth__form">
-          <fieldset className="auth__fieldset">
-            <label className="auth__form-label" htmlFor="name">
+    <div className="auth">
+      <Header mod="header-auth" />
+      <AuthSection
+        buttonText="Зарегистрироваться"
+        caption="Уже зарегистрированы? "
+        linkPath="/signin"
+        linkText="Войти"
+        sectionTitle="Добро пожаловать!">
+        <fieldset className="form__fieldset">
+          <div className="form__input-container">
+            <label className="form__label" htmlFor="name">
               Имя
-              <input name="name" className="auth__form-input" required minLength={2} maxLength={30} placeholder="Имя"/>
+              <input name="name" className="form__input" required minLength={2} maxLength={30} placeholder="Имя"/>
             </label>
-            <span className="auth__form-error"></span>
-            <label className="auth__form-label" htmlFor="email">
+            <span className="form__error"></span>
+            <label className="form__label" htmlFor="email">
               E-mail
-              <input name="email" className="auth__form-input" type="email" required placeholder="E-mail"/>
+              <input name="email" type="email" className="form__input" required placeholder="E-mail"/>
             </label>
-            <span className="auth__form-error"></span>
-            <label className="auth__form-label" htmlFor="password">
+            <span className="form__error"></span>
+            <label className="form__label" htmlFor="email">
               Пароль
-              <input name="password" className="auth__form-input" type="password" required placeholder="Пароль"/>
+              <input name="password" type="password" className="form__input" required placeholder="Пароль"/>
             </label>
-            <span className="auth__form-error"></span>
-          </fieldset>
-          <div className="auth__form-buttons-container">
-            <button className="auth__submit-button">Зарегистрироваться</button>
-            <p className="auth__signin-link-caption">Уже зарегистрированы?
-              <Link className="auth__signin-link" to="/signin">Войти</Link>
-            </p>
+            <span className="form__error"></span>
           </div>
-        </form>
-      </section>
-    </>
+        </fieldset>
+      </AuthSection>
+    </div>
   );
 }
+
 export default Register;

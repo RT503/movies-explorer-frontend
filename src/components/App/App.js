@@ -16,7 +16,7 @@ function App() {
     <div className="root">
       <Switch>
         <Route exact path="/">
-          <Main/>
+          <Main isLoggedIn={false}/>
         </Route>
         <Route path="/signin">
           <Login/>
