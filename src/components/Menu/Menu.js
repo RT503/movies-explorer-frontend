@@ -12,7 +12,7 @@ function Menu({
   navigationAccountMod = '',
 }) {
   return (
-    <nav className={`navigation ${mod}`}>
+    <>
       <ul className={`navigation__list ${navigationListMod}`}>
         {children}
         <li className={`navigation__list-item ${navigationListItemMod}`}>
@@ -32,10 +32,12 @@ function Menu({
           </NavLink>
         </li>
       </ul>
+      <nav className={`navigation ${mod}`}>
       <div className={`navigation__account-container ${navigationAccountMod}`}>
         <NavLink to="/profile" className="navigation__account-link">Аккаунт</NavLink>
       </div>
     </nav>
+      </>
   );
 }
 

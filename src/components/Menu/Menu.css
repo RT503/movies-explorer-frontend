@@ -32,13 +32,13 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  color: #222222;
+  color: #FFFFFF;
   text-decoration: none;
   padding: 8px 42px 8px 10px;
 }
 
 .navigation__account-link:after{
-  background: #F5F5F5 url('../../images/account-icon.png') no-repeat 8px 7px;
+  background: #313131 url('../../images/account-icon.png') no-repeat 8px 7px;
   right: 0;
   top: 2px;
   left: auto;

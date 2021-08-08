@@ -26,22 +26,24 @@
   .nav-tab{
     margin-top: 92px;
     margin-bottom: 76px;
-    width: 150px;
-    height: 100px;
+    width: 130px;
+    /*height: 100px;*/
   }
   .nav-tab__link{
-    width: 36px;
+    /*width: 36px;*/
     /*display: block;*/
     /*margin: 0 20px;*/
-    padding: 20px;
+    /*padding: 20px;*/
   }
 }
 
 @media (max-width:400px){
   .nav-tab{
+    margin-top: 80px;
     gap: 6px;
     max-width: 300px;
     grid-template-columns: repeat(auto-fit, 82px);
+    margin-bottom: 30px;
   }
   .nav-tab__link{
     font-size: 10px;
