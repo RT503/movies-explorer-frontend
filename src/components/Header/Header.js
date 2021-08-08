@@ -4,7 +4,7 @@ import './Header.css';
 
 function Header({ children, mod = '' }) {
   return (
-    <header className="header">
+    <header className={`header ${mod}`}>
       <div className ={`header__container ${mod}`}>
         { <LogoProfile /> }
         {children}

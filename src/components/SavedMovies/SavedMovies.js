@@ -22,10 +22,9 @@ function SavedMovies() {
               <div className="movie__container">
                 <div className="movie__text-container">
                   <p className="movie__title">33 слова о дизайне</p>
-                  <span className="movie__duration">1ч 47м</span>
                 </div>
                 <div className="movie__button-container">
-                  <button className="movie__button movie__delete-button"></button>
+                  <span className="movie__duration">1ч 47м</span>
                 </div>
               </div>
             </li>
@@ -34,10 +33,9 @@ function SavedMovies() {
               <div className="movie__container">
                 <div className="movie__text-container">
                   <p className="movie__title">33 слова о дизайне</p>
-                  <span className="movie__duration">1ч 47м</span>
                 </div>
                 <div className="movie__button-container">
-                  <button className="movie__button movie__delete-button"></button>
+                  <span className="movie__duration">1ч 47м</span>
                 </div>
               </div>
             </li>
@@ -46,10 +44,9 @@ function SavedMovies() {
               <div className="movie__container">
                 <div className="movie__text-container">
                   <p className="movie__title">33 слова о дизайне</p>
-                  <span className="movie__duration">1ч 47м</span>
                 </div>
                 <div className="movie__button-container">
-                  <button className="movie__button movie__delete-button"></button>
+                  <span className="movie__duration">1ч 47м</span>
                 </div>
               </div>
             </li>

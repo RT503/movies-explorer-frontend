@@ -22,7 +22,7 @@
   list-style: none;
   padding-right: 5px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #424242;
   margin-bottom: 19px;
 }
 
@@ -39,7 +39,7 @@
   font-size: 30px;
   line-height: 50px;
   letter-spacing: -0.04em;
-  color: #000000;
+  color: #FFFFFF;
   background: url('../../images/arrow.svg') no-repeat center right;
   display: inline-block;
   width: 100%;

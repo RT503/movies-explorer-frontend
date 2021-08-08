@@ -15,19 +15,20 @@
 }
 
 .movies__more-button{
-  color: #000000;
-  background: #F9F9F9;
+  color: #ffffff;
+  background: #202020;
   border-radius: 6px;
   display: grid;
   height: 36px;
-  width: 100%;
-  border: 0;
+  width: 320px;
+  border: 1px solid #424242;
   cursor: pointer;
   align-items: center;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
+  margin: auto;
 }
 
 .movies__more-button:hover{
