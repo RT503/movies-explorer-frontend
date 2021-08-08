@@ -19,5 +19,7 @@
   .logo {
     margin-top: 70px;
     position: static;
+    width: 210px;
+    height: 206px;
   }
 }

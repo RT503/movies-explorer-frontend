@@ -27,7 +27,6 @@
     margin-top: 92px;
     margin-bottom: 76px;
     width: 130px;
-    /*height: 100px;*/
   }
   .nav-tab__link{
     /*width: 36px;*/
@@ -48,5 +47,6 @@
   .nav-tab__link{
     font-size: 10px;
     line-height: 16px;
+
   }
 }
