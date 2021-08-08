@@ -15,7 +15,7 @@ import './Main.css';
 function Main({ isLoggedIn }) {
   return (
     <main className="main">
-      <Header>
+      <Header mod="header-promo-color">
         {
           !isLoggedIn ? <AuthNav /> : <Navigation/>
         }
