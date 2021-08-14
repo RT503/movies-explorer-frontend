@@ -3,16 +3,15 @@
   flex-wrap: nowrap;
 }
 
-.search-form__container{
+.search-form__container {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 70px 70px 0px;
+  padding: 70px 70px 0;
   box-sizing: border-box;
-  /*display: flex;*/
 }
 
-.search-form__input-container{
+.search-form__input-container {
   position: relative;
   display: flex;
   background: #2F2F2F;
@@ -20,65 +19,76 @@
   align-items: center;
 }
 
-.search-form__input:focus{
+.search-form__input:focus {
   outline: none;
-  box-shadow: 0px 0px 5px #4285F4;
+  box-shadow: 0 0 5px #4285F4;
 }
 
-.search-form__input{
+.search-form__input {
   width: 100%;
   max-width: 830px;
-  height: 72px;
+  height: 40px;
+  padding-bottom: 36px;
+  padding-top: 36px;
+  padding-left: 65px;
   box-sizing: border-box;
   background: no-repeat;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #8B8B8B;
   border: 0;
-  /*border-right: 1px solid #424242;*/
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 34px;
-  color: #F9F9F9;
-  /*border-radius: 9px;*/
+
 }
 
-.search-form__search-container{
-  /*box-sizing: border-box;*/
-  padding-bottom: 45px;
+.search-form__lens-img {
+  box-sizing: border-box;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  left: 25px;
+  background: url('../../images/icon-lens-search.svg') no-repeat center / contain;
+}
+
+ .search-form__input::placeholder {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  color: #A0A0A0;
+  /*padding-left: 65px;*/
+}
+
+.search-form__search-container {
+  box-sizing: content-box;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #424242;
 
 }
 
 .search-form__button {
   height: 34px;
+  width: 34px;
   border-radius: 48px;
   cursor: pointer;
-  background: #3456F3;
+  background: url('../../images/find-icon-with-blue-bg.svg') no-repeat center / contain;
   font-style: normal;
-  font-weight: 500;
-  font-size: 11px;
-  line-height: 18px;
   border: 0;
   /*!*position: absolute;*!*/
   /*right: 10px;*/
   /*top: 10px;*/
   color: #fff;
   margin-left: 30px;
-  padding: 5px 12px 5px 12px;
+  /*padding: 5px 12px 5px 12px;*/
+
 }
 
-.search-form__button:hover{
+.search-form__button:hover {
   opacity: .8;
   transition: opacity .25s ease-in-out;
 }
 
-.search-form__input::placeholder {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 20px;
-  color: #A0A0A0;
-  padding-left: 30px;
-}
-
-.search-form__switch-container{
+.search-form__switch-container {
   margin-left: 30px;
   display: grid;
   grid-template-columns: 36px auto;
@@ -87,7 +97,7 @@
   gap: 10px;
 }
 
-.search-form__checkbox-text{
+.search-form__checkbox-text {
   color: #FFFFFF;
   font-style: normal;
   font-weight: normal;
@@ -103,7 +113,7 @@
   height: 20px;
 }
 
-.switch__input{
+.switch__input {
   visibility: hidden;
 }
 
@@ -146,36 +156,36 @@
 }
 
 @media (max-width: 1024px) {
-  .search-form__container{
-    padding: 60px 30px 0px 30px;
+  .search-form__container {
+    padding: 60px 30px 0 30px;
   }
 }
 
 @media (max-width: 768px) {
 
-  .search-form__search-container{
+  .search-form__search-container {
     grid-template-columns: 1fr;
     gap: 38px;
     padding-bottom: 57px;
   }
 
-  .search-form__checkbox-text{
+  .search-form__checkbox-text {
     text-align: right;
   }
 }
 
-@media(max-width:768px) and (min-width:560px){
-  .search-form__input-container{
-    padding: 60px calc((100vw - 560px)/(768 - 560) * (30 - 10) + 10px) 0px;
+@media (max-width: 768px) and (min-width: 560px) {
+  .search-form__input-container {
+    padding: 60px calc((100vw - 560px) / (768 - 560) * (30 - 10) + 10px) 0;
   }
 }
 
 @media (max-width: 560px) {
-  .search-form__container{
-    padding: 60px 10px 0px;
+  .search-form__container {
+    padding: 60px 10px 0;
   }
 
-  .search-form__checkbox-text{
+  .search-form__checkbox-text {
     font-size: 11px;
     line-height: 18px;
   }
@@ -185,7 +195,7 @@
     line-height: 18px;
   }
 
-  .search-form__search-container{
+  .search-form__search-container {
     padding-bottom: 44px;
   }
 }
