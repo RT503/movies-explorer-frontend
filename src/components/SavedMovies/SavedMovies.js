@@ -18,6 +18,7 @@ function SavedMovies() {
         <div className="movies__container">
           <ul className="movies__list">
             <li className="movie">
+
               <img src={defaultMovieImage} className="movie__image" alt="Изображение по умолчанию"/>
               <div className="movie__container">
                 <div className="movie__text-container">
