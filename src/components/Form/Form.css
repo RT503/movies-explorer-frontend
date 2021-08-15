@@ -175,7 +175,6 @@
 
 @media (max-width: 395px) {
   .form__buttons-container {
-    position: absolute;
     box-sizing: border-box;
     right: 30px;
     left: 30px;
