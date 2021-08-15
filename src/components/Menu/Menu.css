@@ -1,6 +1,7 @@
 .navigation{
+  width: calc(100%);
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
 
 .navigation__list{
@@ -8,8 +9,7 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 20px;
-  margin: 0;
-  /*padding-left: 140px;*/
+  margin: 0 auto;
 }
 
 .navigation__link{
@@ -19,10 +19,6 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-}
-
-.navigation__account-container{
-  margin-left: 300px;
 }
 
 .navigation__account-link{
