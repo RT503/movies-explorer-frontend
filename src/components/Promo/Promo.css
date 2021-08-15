@@ -1,10 +1,10 @@
-.promo {
+.promo{
   padding: 75px 20px 0;
   background: #073042;
   height: 574px;
 }
 
-.promo__container {
+.promo__container{
   margin: 0 auto;
   background-color: #073042;
   width: 100%;
@@ -24,24 +24,17 @@
   font-style: normal;
   font-weight: normal;
 }
-
-.promo__text {
-  margin-top: 36px;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 16px;
-  color: #FFFFFF;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
-
-@media (max-width: 1024px) {
-  .promo__title {
-    width: 60%;
+  .promo__text {
+    margin-top: 36px;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
   }
-}
 
-@media (max-width: 768px) {
+@media (max-width:768px){
   .promo {
     height: auto;
     padding: 0;
@@ -54,7 +47,6 @@
   }
 
   .promo__title {
-    width: auto;
     max-width: 680px;
     margin-top: 48px;
     font-size: 40px;
@@ -68,12 +60,12 @@
   }
 }
 
-@media (max-width: 560px) {
-  .promo__container {
+@media (max-width:560px){
+  .promo__container{
     /*max-height: 570px;*/
   }
 
-  .promo__title {
+  .promo__title{
     font-size: 31px;
     line-height: 39px;
     margin-top: 44px;
@@ -84,8 +76,8 @@
   }
 }
 
-@media (max-width: 768px) and (min-width: 560px) {
-  .promo {
-    padding: 0 calc((100vw - 560px) / (768 - 560) * (20 - 14) + 14px);
+@media(max-width:768px) and (min-width:560px){
+  .promo{
+    padding: 0 calc((100vw - 560px)/(768 - 560) * (20 - 14) + 14px);
   }
 }
