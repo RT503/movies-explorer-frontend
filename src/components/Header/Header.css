@@ -58,9 +58,11 @@
 @media (max-width:560px){
   .header__container{
     padding: 18px 14px;
+    /*width: 50%;*/
   }
 
   .header-auth{
+    /*margin: auto 0;*/
     padding: 70px 0 40px;
     justify-content: center;
   }
