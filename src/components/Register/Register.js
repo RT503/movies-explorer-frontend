@@ -6,8 +6,8 @@ import './Register.css';
 
 function Register() {
   return (
-    <div className="auth">
-      <Header mod="header-auth" />
+    <>
+      <Header mod="header-auth"/>
       <AuthSection
         buttonText="Зарегистрироваться"
         caption="Уже зарегистрированы? "
@@ -20,21 +20,21 @@ function Register() {
               Имя
               <input name="name" className="form__input" required minLength={2} maxLength={30} placeholder="Имя"/>
             </label>
-            <span className="form__error"></span>
+            <span className="form__error"/>
             <label className="form__label" htmlFor="email">
               E-mail
               <input name="email" type="email" className="form__input" required placeholder="E-mail"/>
             </label>
-            <span className="form__error"></span>
+            <span className="form__error"/>
             <label className="form__label" htmlFor="email">
               Пароль
               <input name="password" type="password" className="form__input" required placeholder="Пароль"/>
             </label>
-            <span className="form__error"></span>
+            <span className="form__error"/>
           </div>
         </fieldset>
       </AuthSection>
-    </div>
+    </>
   );
 }
 
