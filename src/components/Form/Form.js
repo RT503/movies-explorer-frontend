@@ -20,7 +20,7 @@ function Form({
         </button>
         <p className="form__caption">
           {caption}
-          <Link to={linkPath} className={`fprm__link ${linkMod}`}>{linkText}</Link>
+          <Link to={linkPath} className={`form__link ${linkMod}`}>{linkText}</Link>
         </p>
       </div>
     </form>
