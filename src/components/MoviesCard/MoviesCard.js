@@ -8,13 +8,7 @@ function MoviesCard() {
     <>
       <li className="movie">
         <div>
-          <button className="movie__save-button">Сохранить</button>
-        </div>
-        <div>
-          <button className="movie__saved-button"/>
-        </div>
-        <div>
-          <button className="movie__delete-button"/>
+          <button className="movie__button movie__button_saved movie__button_delete">Сохранить</button>
         </div>
         <img src={defaultMovieImage} className="movie__image" alt="Изображение по умолчанию"/>
         <div className="movie__container">
@@ -28,6 +22,9 @@ function MoviesCard() {
         </div>
       </li>
       <li className="movie">
+        <div>
+          <button className="movie__button movie__button_saved movie__button_delete">Сохранить</button>
+        </div>
         <img src={defaultMovieImage} className="movie__image" alt="Изображение по умолчанию"/>
         <div className="movie__container">
           <div className="movie__text-container">
@@ -39,6 +36,9 @@ function MoviesCard() {
         </div>
       </li>
       <li className="movie">
+        <div>
+          <button className="movie__button movie__button_saved movie__button_delete">Сохранить</button>
+        </div>
         <img src={defaultMovieImage} className="movie__image" alt="Изображение по умолчанию"/>
         <div className="movie__container">
           <div className="movie__text-container">
@@ -50,6 +50,9 @@ function MoviesCard() {
         </div>
       </li>
       <li className="movie">
+        <div>
+          <button className="movie__button movie__button_saved movie__button_delete">Сохранить</button>
+        </div>
         <img src={defaultMovieImage} className="movie__image" alt="Изображение по умолчанию"/>
         <div className="movie__container">
           <div className="movie__text-container">
@@ -61,6 +64,9 @@ function MoviesCard() {
         </div>
       </li>
       <li className="movie">
+        <div>
+          <button className="movie__button movie__button_saved movie__button_delete">Сохранить</button>
+        </div>
         <img src={defaultMovieImage} className="movie__image" alt="Изображение по умолчанию"/>
         <div className="movie__container">
           <div className="movie__text-container">
@@ -72,6 +78,9 @@ function MoviesCard() {
         </div>
       </li>
       <li className="movie">
+        <div>
+          <button className="movie__button movie__button_saved movie__button_delete">Сохранить</button>
+        </div>
         <img src={defaultMovieImage} className="movie__image" alt="Изображение по умолчанию"/>
         <div className="movie__container">
           <div className="movie__text-container">

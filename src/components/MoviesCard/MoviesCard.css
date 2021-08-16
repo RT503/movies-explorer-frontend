@@ -32,6 +32,20 @@
   overflow: hidden;
 }
 
+.movie__button {
+  width: 72px;
+  height: 21px;
+  background: #313131;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 9px;
+  border: none;
+  border-radius: 30px;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
 .movie__duration {
   width: 52px;
   background-color: #2F2F2F;
@@ -44,54 +58,18 @@
   color: #8B8B8B;
 }
 
-.movie__unsave-button {
-  background: url('../../images/unsaved-icon.svg') no-repeat center center;
-}
-
-.movie__save-button {
-  width: 72px;
-  height: 21px;
-  background: #313131;
-  color: #ffffff;
-  font-size: 10px;
-  line-height: 9px;
-  border: none;
-  border-radius: 30px;
-
-
-  position: absolute;
-  top: 14px;
-  right: 14px;
-
-}
-
-.movie__saved-button {
+.movie__button_saved {
   background: url('../../images/saved-icon.svg') no-repeat center center;
+  font-size: 0;
+  line-height: 0;
   width: 21px;
-  height: 21px;
-  color: #ffffff;
-  border: none;
-  border-radius: 30px;
-
-
-  position: absolute;
-  top: 14px;
-  right: 14px;
-
 }
 
-.movie__delete-button {
+.movie__button_delete {
   background: url('../../images/delete-icon.svg') no-repeat center center;
+  font-size: 0;
+  line-height: 0;
   width: 21px;
-  height: 21px;
-  color: #ffffff;
-  border: none;
-  border-radius: 30px;
-
-
-  position: absolute;
-  top: 14px;
-  right: 14px;
 }
 
 @media (max-width: 768px) {
