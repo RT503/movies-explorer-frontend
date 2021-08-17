@@ -31,7 +31,8 @@ function Profile({
       <Header mod="header-authorized">
         <Navigation/>
       </Header>
-      <Section mod="profile" sectionTitleMod="profile__title" sectionTitle='Привет, Роман!'>
+      {/* eslint-disable-next-line no-template-curly-in-string */}
+      <Section mod="profile" sectionTitleMod="profile__title" sectionTitle={`Привет, ${values.name}`}>
         <Form
           buttonText="Редактировать"
           submitButtonMod="form__submit-button_section_profile"
