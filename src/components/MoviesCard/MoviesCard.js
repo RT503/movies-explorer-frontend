@@ -65,7 +65,7 @@ function MoviesCard({
   return (
       <li className="movie">
         <div>
-          <button className={`movie__button movie__unsave-button ${isSaved && 'movie__saved-button'} ${savedPage && 'movie__delete-button'}`} onClick={!isSaved && !savedPage ? handleSave : handleRemove}/>
+          <button className={`movie__button ${!isSaved && 'movie__unsave-button'} ${isSaved && 'movie__saved-button'} ${savedPage && 'movie__delete-button'}`} onClick={!isSaved && !savedPage ? handleSave : handleRemove}/>
         </div>
         <img src={image || defaultMovieImage} className="movie__image" alt={nameRU} onClick={handleClick}/>
         <div className="movie__container">
