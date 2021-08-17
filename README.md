@@ -1,8 +1,8 @@
-#Movies Explorer / front-end часть проекта
+# Movies Explorer / front-end часть проекта
 
-###Смотреть
+### Смотреть
 
-####https://rt503diploma.nomoredomains.club/
+#### https://rt503diploma.nomoredomains.club/
 
 ## Стек
 - JavaScript
