@@ -298,7 +298,7 @@ function App() {
               isFormDisabled={isFormDisabled}
             />
 
-            <Route path='*' component={NotFound} />
+            <Route path='*' exact={true} component={NotFound} />
           </Switch>
 
           <InfoTooltip
