@@ -64,11 +64,11 @@
   background: url('../../images/unsaved-icon.svg') no-repeat center center;
 }
 
-.movie__saved-button{
+.movie__button_saved{
   background: url('../../images/saved-icon.svg') no-repeat center center;
 }
 
-.movie__delete-button{
+.movie__button_delete{
   background: url('../../images/delete-icon.svg') no-repeat center center;
 }
 
