@@ -76,7 +76,12 @@ function App() {
     try {
       setIsFormDisabled(true);
       setMessage('');
-      const user = await api.login(userData);
+      const user = await api.login(userData).then((res) => {
+        if (res.token) {
+          localStorage.setItem('token', res.token);
+        }
+        return res;
+      });
 
       setCurrentUser(user);
       setIsLoggedIn(true);

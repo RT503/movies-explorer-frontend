@@ -116,6 +116,7 @@
 }
 
 .form__input_section_profile {
+  color: #ffffff;
   margin: 0;
   padding: 0;
   background: transparent;
@@ -128,8 +129,8 @@
   border-bottom: none;
 }
 
-
 .form__containter_section_profile{
+  border: none;
   margin-bottom: 225px;
 }
 
@@ -169,8 +170,8 @@
 }
 
 .form__submit-button_inactive {
-  background: #F8F8F8;
-  color: #C2C2C2;
+  /*background: #F8F8F8;*/
+  color: #ffffff;
   pointer-events: none;
   user-select: none;
 }
