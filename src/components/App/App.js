@@ -267,7 +267,7 @@ function App() {
             </Route>
 
             <ProtectedRoute
-              path="/protected"
+              path="/movies"
               isLoggedIn={isLoggedIn}
               isFetched={isFetched}
               isLoading={isLoading}
