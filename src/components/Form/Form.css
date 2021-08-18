@@ -170,8 +170,8 @@
 }
 
 .form__submit-button_inactive {
-  /*background: #F8F8F8;*/
-  color: #ffffff;
+  background: #F8F8F8;
+  color: #a0a0a0;
   pointer-events: none;
   user-select: none;
 }

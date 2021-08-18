@@ -267,7 +267,7 @@ function App() {
             </Route>
 
             <ProtectedRoute
-              path="/movies"
+              path="/protected"
               isLoggedIn={isLoggedIn}
               isFetched={isFetched}
               isLoading={isLoading}
@@ -298,7 +298,7 @@ function App() {
               isFormDisabled={isFormDisabled}
             />
 
-            <Route path='*' exact={true} component={NotFound} />
+            <Route path='*' component={NotFound} />
           </Switch>
 
           <InfoTooltip
