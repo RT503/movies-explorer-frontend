@@ -2,8 +2,6 @@
 
 ### Смотреть
 
-#### https://rt503diploma.nomoredomains.club/
-
 ## Стек
 - JavaScript
 - React
