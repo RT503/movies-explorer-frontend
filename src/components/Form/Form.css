@@ -116,6 +116,7 @@
 }
 
 .form__input_section_profile {
+  color: #ffffff;
   margin: 0;
   padding: 0;
   background: transparent;
@@ -128,8 +129,8 @@
   border-bottom: none;
 }
 
-
 .form__containter_section_profile{
+  border: none;
   margin-bottom: 225px;
 }
 
@@ -166,6 +167,13 @@
   font-size: 13px;
   line-height: 16px;
   text-decoration: none;
+}
+
+.form__submit-button_inactive {
+  background: #F8F8F8;
+  color: #a0a0a0;
+  pointer-events: none;
+  user-select: none;
 }
 
 .form__link_type_exit:hover{

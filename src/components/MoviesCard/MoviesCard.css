@@ -1,5 +1,4 @@
 .movie {
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   display: grid;
   border-radius: 6px;
@@ -8,7 +7,7 @@
 
 .movie__container {
   display: grid;
-  grid-template-columns: auto 30px;
+  grid-template: 1fr/1fr 30px;
   gap: 26px;
   margin: 14px;
   align-items: center;
@@ -18,6 +17,7 @@
   object-fit: cover;
   width: 100%;
   height: 203px;
+  cursor: pointer;
 }
 
 .movie__title {
@@ -32,22 +32,7 @@
   overflow: hidden;
 }
 
-.movie__button {
-  width: 72px;
-  height: 21px;
-  background: #313131;
-  color: #ffffff;
-  font-size: 10px;
-  line-height: 9px;
-  border: none;
-  border-radius: 30px;
-  position: absolute;
-  top: 14px;
-  right: 14px;
-}
-
 .movie__duration {
-  width: 52px;
   background-color: #2F2F2F;
   font-style: normal;
   font-weight: normal;
@@ -58,18 +43,39 @@
   color: #8B8B8B;
 }
 
-.movie__button_saved {
-  background: url('../../images/saved-icon.svg') no-repeat center center;
-  font-size: 0;
-  line-height: 0;
-  width: 21px;
+.movie__button-container {
+  width: 52px;
+  height: 18px;
 }
 
-.movie__button_delete {
-  background: url('../../images/delete-icon.svg') no-repeat center center;
-  font-size: 0;
-  line-height: 0;
+.movie__button{
+  cursor: pointer;
   width: 21px;
+  height: 21px;
+  outline: none;
+  border: 0;
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
+
+.movie__unsave-button {
+  width: 72px;
+  background: url('../../images/unsaved-icon.svg') no-repeat center center;
+}
+
+.movie__saved-button{
+  background: url('../../images/saved-icon.svg') no-repeat center center;
+}
+
+.movie__delete-button{
+  background: url('../../images/delete-icon.svg') no-repeat center center;
+}
+
+.movies__error{
+  color: #fff;
+  text-align: center;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
